@@ -8,7 +8,7 @@
 alias ls='ls --color=auto'
 alias dc='docker-compose'
 
-PS1='\e[0;31m[\u@\h \W]\$ \e[m'
+PS1='\[\e[0;31m\][\u@\h \W]\$ \[\e[m\]'
 
 # Add custom utility to path (created by johnc219)
 export PATH=$PATH:$HOME/utility/
