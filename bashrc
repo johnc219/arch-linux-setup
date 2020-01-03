@@ -13,9 +13,6 @@ PS1='\[\e[0;31m\][\u@\h \W]\$ \[\e[m\]'
 # Add custom utility to path (created by johnc219)
 export PATH=$PATH:$HOME/utility/
 
-# Add rust
-export PATH=$HOME/.cargo/bin:$PATH
-
 # Initialize rbenv
 eval "$(rbenv init -)"
 

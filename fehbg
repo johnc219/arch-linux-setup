@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-scale '/usr/share/archlinux/wallpaper/archlinux-poison.jpg' 
+feh --no-fehbg --bg-scale '/usr/share/backgrounds/archlinux/archlinux-poison.jpg' 

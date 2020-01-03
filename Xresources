@@ -6,6 +6,9 @@ Xft.hinting: 1
 Xft.antialias: 1
 Xft.rgba: rgb
 
+! HiDPI settings
+Xft.dpi: 192
+
 ! Custom color scheme
 ! special
 *.foreground:   #c5c8c6
