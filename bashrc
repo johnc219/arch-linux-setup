@@ -8,6 +8,8 @@
 alias ls='ls --color=auto'
 alias dc='docker-compose'
 
+export MOZ_ENABLE_WAYLAND=1
+
 PS1='\[\e[0;31m\][\u@\h \W]\$ \[\e[m\]'
 
 # Add custom utility to path (created by johnc219)
