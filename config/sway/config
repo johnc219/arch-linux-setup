@@ -211,10 +211,11 @@ include /etc/sway/config.d/*
 xwayland disable
 
 # Remove program titles
-default_border pixel 5
+default_border pixel 4
 # client.focused #471435 #471435 #471435 #5a1073 #471435 
 
 gaps inner 15
+gaps outer 15
 # Add borders to programs
 # for_window [app_id="^.*"] border pixel 5
 # for_window [class="^.*"] border pixel 5
