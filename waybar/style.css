@@ -69,6 +69,7 @@ window#waybar.chromium {
 #battery,
 #cpu,
 #memory,
+#disk,
 #temperature,
 #backlight,
 #network,

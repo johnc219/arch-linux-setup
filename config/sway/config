@@ -21,7 +21,8 @@ set $menu bemenu-run | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/archlinux/archlinux-poison.jpg fill
+#output * bg /usr/share/backgrounds/archlinux/archlinux-deep-aurora.jpg fill
+output * bg /home/john/Downloads/1776243.jpg fill
 #
 # Example configuration:
 #
@@ -207,21 +208,37 @@ bar {
 
 include /etc/sway/config.d/*
 
-# Disable xwayland support
-xwayland disable
+# == Personal Customization ==
 
-# Remove program titles
-default_border pixel 4
+# Disable xwayland support
+# xwayland disable
+
+# Remove window titles
+default_border pixel 3
+
+# Customize colors of focused window
 # client.focused #471435 #471435 #471435 #5a1073 #471435 
 
+# Set gaps around windows
 gaps inner 15
 gaps outer 15
-# Add borders to programs
-# for_window [app_id="^.*"] border pixel 5
-# for_window [class="^.*"] border pixel 5
 
 # Customize keyboard
 input 1:1:AT_Translated_Set_2_keyboard {
     xkb_options ctrl:nocaps
 }
+
+# == Custom keybinds ==
+
+# Cycle through workspaces
+bindsym $mod+tab workspace next
+bindsym $mod+Shift+tab workspace prev
+
+# Focus child
+bindsym $mod+c focus child
+
+# == Start programs ==
+
+# Start redshift (wayland fork)
+exec redshift
 

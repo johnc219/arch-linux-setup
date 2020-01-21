@@ -1,13 +1,13 @@
 {
-    "layer": "bottom", // Waybar at top layer
+    "layer": "bottom", // Waybar at bottom layer ("behind")
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     //
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
+    "modules-left": ["sway/workspaces", "sway/mode"],
     // "modules-center": ["sway/window"],
-    "modules-right": [ "network", "cpu", "memory", "battery", "battery#bat2", "clock", "tray"],
+    "modules-right": [ "network", "cpu", "memory", "temperature",  "disk",  "battery", "clock", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -74,6 +74,9 @@
     },
     "memory": {
         "format": "{}% "
+    },
+    "disk": {
+        "format": "{free} "
     },
     "temperature": {
         // "thermal-zone": 2,
