@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls -lA --color=auto'
+alias ls='ls -A --color=auto'
 alias dc='docker-compose'
 
 PS1='\[\e[0;35m\][\W]> \[\e[m\]'
