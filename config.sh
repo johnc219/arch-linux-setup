@@ -1,7 +1,7 @@
 #!/bin/bash
 ############################
 # This script creates symlinks from the home directory to config
-# files or dotfiles in this project
+# files and dotfiles in this project
 ############################
 
 dir=$(dirname $(realpath $0))
@@ -19,7 +19,6 @@ for leaf_dir in $leaf_dirs; do
 	mkdir -p $backup_dir/$leaf_dir
 done
 
-# moving any existing files to backup directory
 echo "moving existing files to the backup directory:"
 for file in $files; do
 	if [ -e ~/$file ]
