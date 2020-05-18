@@ -1,21 +1,11 @@
-## dotfiles
+## Arch Linux Setup
+A personal reference for my Arch Linux setup.
 
-These are my Arch Linux public dotfiles:
-- bashrc
-- fehbg
-- xinitrc
-- Xmodmap
-- Xresources
-- xserverrc
-- vimrc
+The `config` folder contains config files and dotfiles relative to a home directory.
+The `installed_packages.txt` file lists all installed packages generated via `yay -Qe`
 
-## packages
-- xorg
-- i3
-- urxvt
-- feh
-- redshift
-
-## usage
+### usage
+To install config files and dotfiles:
 1. clone this repo
-1. run `.make.sh` to set up dotfiles. Dotfile symlinks will be created in `~/dotfiles`. Old dotfiles will be placed in `~/dotfiles_old`
+1. run `config.sh`. Symlinks to these files will be created in home directory. Old config files and dotfiles will be placed in a `./config_backup` directory in this project.
+
