@@ -21,7 +21,6 @@ set $menu bemenu-run | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-# output * bg /usr/share/backgrounds/archlinux/archlinux-simplyblack.png fill
 output * bg #000000 solid_color
 #
 # Example configuration:
@@ -231,7 +230,7 @@ smart_borders on
 # <border> <background> <text> [<indicator> [<child_border>]]
 client.focused #000000 #000000 #D81860 #2e9ef4 #D81860
 client.unfocused #000000 #000000 #888888 #000000 #222222
-client.focused_inactive #000000 #000000 #D81860 #000000 #222222 
+client.focused_inactive #000000 #000000 #D81860 #000000 #222222
 
 # Set gaps around windows
 gaps inner 15
